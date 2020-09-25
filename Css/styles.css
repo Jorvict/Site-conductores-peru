@@ -57,7 +57,6 @@ ol,ul{
 main .hero{
     height: 620px;
     width: 100%;
-    background-color: red;
 }
 main .hero .video-container{
     height: inherit;
