@@ -36,7 +36,7 @@ ol,ul{
 .header .header-lower .menu ol li{
 
     width: 150px;
-    height: 35px;
+    height: 65px;
     height: inherit;
     display: flex;
 }
@@ -52,7 +52,13 @@ ol,ul{
     justify-content: center;
     align-items: center;
     width: inherit;
+    height: 65px;
 }
+.header .header-lower .menu ol li .link:hover{
+    background-color: #0b5084;
+    /* border-radius: 20px; */
+}
+
 
 main .hero{
     height: 620px;
@@ -104,4 +110,29 @@ main .hero .video-container .hero-note h1{
     font-size: 72px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+}
+main .about-us .about-us-header-container{
+    background-color: #0e6cb1;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .about-us .about-us-header-container .about-us-header{
+    color: white;
+    font-size: 48px;
+}
+main .about-us .about-us-description{
+    height: 600px;
+    background-color: #f9f9f9;
+}
+main .about-us .about-us-description .about-us-title{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+}
+main .about-us .about-us-description .about-us-text{
+    padding-top: 25px;
+    font-size: 20px;
+    text-align: center;
 }
