@@ -127,12 +127,28 @@ main .about-us .about-us-description{
     background-color: #f9f9f9;
 }
 main .about-us .about-us-description .about-us-title{
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
     padding-top: 50px;
 }
 main .about-us .about-us-description .about-us-text{
     padding-top: 25px;
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
+}
+.about-us-pictures{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.picture-container{
+    width: 400px;
+    height: 325px;
+    background-color: red;
+    margin-right: 50px;
+}
+.picture-container img{
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
 }
