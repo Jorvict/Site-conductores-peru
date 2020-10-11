@@ -184,25 +184,26 @@ main .about-us .about-us-description .about-us-text{
 main .banner{
     width: 100vw;
     height: 60vh;
-}
-
-.banner {
-    width: 100%;
-    height: 600px;
     display: flex;
 }
+
+.banner .img-container{
+    width: 75%;
+    height: 100%;
+}
+
 .banner .img-banner{
-    width: 1300px;
-    height: inherit;
+    width: 100%;
+    height: 100%;
 }
 .banner .img-banner img{
-    width: inherit;
-    height: inherit;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 .banner .nota-banner{
-    height: inherit;
-    width: inherit;
+    height: 100%;
+    width: 25%;
     background-color: #0e6cb1;
 }
 
@@ -218,7 +219,7 @@ main .banner{
 .services-parent .services{
     margin: 0 auto;
     width: 80%;
-    height: 700px;
+    height: 100%;
     display: flex;
 }
 .services .services-container
