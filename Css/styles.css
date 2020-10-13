@@ -88,7 +88,7 @@ main .container-global{
 
 main .hero{
     height: 70vh;
-    width: 100%;
+    width: 100vw;
 }
 main .hero .video-container{
     height: inherit;
@@ -99,7 +99,7 @@ main .hero .video-container{
 }
 main .hero .video-container video{
     height: inherit;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     position: absolute;
     z-index: 5;
@@ -113,7 +113,7 @@ main .hero .texture{
 }
 main .hero .video-container::after{
     height: inherit;
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
     content: '';
     position: absolute;
@@ -197,7 +197,7 @@ main .banner{
 }
 
 .banner .img-container{
-    width: 75%;
+    width: 65%;
     height: 100%;
 }
 
@@ -212,9 +212,35 @@ main .banner{
 }
 .banner .nota-banner{
     height: 100%;
-    width: 25%;
+    width: 35%;
     background-color: #0e6cb1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.banner .nota-banner .ul-container{
+    color: white;
+    width: 85%;
+    height: 70%;
+}
+.banner .nota-banner .ul-container .list{
+    margin-bottom: 40px;
+}
+.banner .nota-banner .ul-container .list h2{
+    font-size: 3.6rem;
+    margin-bottom: 10px;
+}
+.banner .nota-banner .ul-container .list li{
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+}
+.banner .nota-banner .ul-container .list li .asset{
+    content: url('../Resources/check.svg');
+    height: 5%;
+    width: 3%;
+    margin-right: 10px;
+}
+
 
 /* Services */
 
@@ -287,13 +313,105 @@ main .banner{
 .contact{
     background-color: #0e6cb1;
     background-image: url('../Resources/texture-contact.png');
-    height: 800px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    color: white;
+}
+/* Contact Left */
+.contact .contact-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contact .contact-left .container-text{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contact .contact-left .container-text .contact-text{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    /* color: white; */
+}
+.contact .contact-left .container-text .contact-title{
+    padding-top: 7%;
+    font-size: 2.4rem;
+}
+/* Contact right */
+.contact-right{
+    /* background-color: purple; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.contact-right .form-contact-container{
+    width: 70%;
+    height: 100%;
+    margin: auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contact-right .form-contact-container .form-contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact-right .form-contact-container .form-contact h2{
+    font-size: 3.2rem;
+}
+
+.contact-right .form-contact-container .form-contact label{
+    width: 100%;
+    height: 7%;
+    justify-content: center;
+    font-size: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.contact-right .form-contact-container .form-contact label span{
+    width: 100%;
+}
+.contact-right .form-contact-container .form-contact label input{
+    width: 100%;
+    padding: 10px 15px;
+}
+.contact-right .form-contact-container .form-contact label input:focus,
+.contact-right .form-contact-container .form-contact label select:focus{
+    outline: none;
+}
+.contact-right .form-contact-container .form-contact label select{
+    height: 100%;
+    width: 100%;
+}
+.contact-right .form-contact-container .form-contact button{
+    background-color: #4c7bff;
+    color: white;
+    height: 7%;
+    width: 20%;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: none;
+    font-size: 1.8rem;
+}
+.contact-right .form-contact-container .form-contact button:focus{
+    outline: none;
 }
 
 /* Footer */
 
 .footer{
     width: 100%;
-    height: 80px;
+    height: 8vh;
     background-color: #084069 ;
 }
