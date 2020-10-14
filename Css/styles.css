@@ -314,7 +314,7 @@ main .banner{
     background-color: #0e6cb1;
     background-image: url('../Resources/texture-contact.png');
     width: 100%;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     color: white;
 }
@@ -347,7 +347,6 @@ main .banner{
 }
 /* Contact right */
 .contact-right{
-    /* background-color: purple; */
     width: 50%;
     height: 100%;
     display: flex;
@@ -368,31 +367,31 @@ main .banner{
 }
 .contact-right .form-contact-container .form-contact h2{
     font-size: 3.2rem;
+    margin-bottom: 20px;
 }
 
 .contact-right .form-contact-container .form-contact label{
     width: 100%;
     height: 7%;
-    justify-content: center;
+    justify-content: flex-end;
     font-size: 1.8rem;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     margin-bottom: 20px;
 }
 .contact-right .form-contact-container .form-contact label span{
-    width: 100%;
+    justify-content: flex-start;
+    margin-right: 30px;
 }
-.contact-right .form-contact-container .form-contact label input{
-    width: 100%;
+.contact-right .form-contact-container .form-contact label input,
+.contact-right .form-contact-container .form-contact label select{
+    width: 25vw;
+    justify-content: flex-end;
     padding: 10px 15px;
 }
 .contact-right .form-contact-container .form-contact label input:focus,
 .contact-right .form-contact-container .form-contact label select:focus{
     outline: none;
-}
-.contact-right .form-contact-container .form-contact label select{
-    height: 100%;
-    width: 100%;
 }
 .contact-right .form-contact-container .form-contact button{
     background-color: #4c7bff;
