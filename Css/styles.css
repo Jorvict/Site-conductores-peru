@@ -496,6 +496,10 @@ main .banner {
     main .banner {
         height: 70vh;
     }
+
+    .contact {
+        height: 75vh;
+    }
 }
 
 @media screen and (max-width:425px){
