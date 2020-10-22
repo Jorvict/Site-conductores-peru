@@ -483,8 +483,19 @@ main .banner {
     
     main .about-us .about-us-description .about-us-text{
         font-size: 1.8rem;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
     }
 
+}
+@media screen and (max-height:768px){
+    main .about-us{
+        height: 90vh;
+    }
+
+    main .banner {
+        height: 70vh;
+    }
 }
 
 @media screen and (max-width:425px){
