@@ -1,66 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
-ol,ul{
+
+ol, ul {
     list-style: none;
 }
 
 /* Header */
 
-.header{
-    background-color:white;
+.header {
+    background-color: white;
     width: 100vw;
     height: 22vh;
 }
-.header .header-upper{
+
+.header .header-upper {
     width: 100%;
     height: 70%;
 }
-.header .header-upper .container-logo{
+
+.header .header-upper .container-logo {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
+
 .header .header-upper .container-logo img {
     height: 100%;
     width: 33%;
 }
-.header .header-lower{
+
+.header .header-lower {
     background-color: #0e6cb1;
     width: 100%;
     height: 30%;
     display: flex;
     justify-content: center;
 }
-.header .header-lower .menu{
+
+.header .header-lower .menu {
     width: 100%;
     height: 100%;
 }
-.header .header-lower .menu ol{
+
+.header .header-lower .menu ol {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-.header .header-lower .menu ol li{
+
+.header .header-lower .menu ol li {
     width: 10%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
-.header .header-lower .menu ol .link-middle{
+
+.header .header-lower .menu ol .link-middle {
     border-left: 0.1px dotted white;
     border-right: 0.1px dotted white;
 }
-.header .header-lower .menu ol li .link{
+
+.header .header-lower .menu ol li .link {
     text-decoration: none;
     color: white;
     font-size: 2.4rem;
@@ -70,69 +81,64 @@ ol,ul{
     width: 100%;
     height: 100%;
 }
-.header .header-lower .menu ol li .link:hover{
+
+.header .header-lower .menu ol li .link:hover {
     background-color: #0b5084;
     /* border-radius: 20px; */
 }
 
-/* Main */
-
-main{
-    /* width: 100vw; */
-}
-main .container-global{
-    /* width: 90%; */
-}
-
-/* Hero */
-
-main .hero{
+main .hero {
     height: 70vh;
     width: 100vw;
 }
-main .hero .video-container{
+
+main .hero .video-container {
     height: inherit;
     width: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-main .hero .video-container video{
+
+main .hero .video-container video {
     height: inherit;
     width: 100vw;
     object-fit: cover;
     position: absolute;
     z-index: 5;
 }
-main .hero .texture{
+
+main .hero .texture {
     width: inherit;
     height: inherit;
     position: absolute;
     z-index: 15;
     background: url('../Resources/textures.png');
 }
-main .hero .video-container::after{
+
+main .hero .video-container::after {
     height: inherit;
     width: 100vw;
     object-fit: cover;
     content: '';
     position: absolute;
     z-index: 10;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
 }
-main .hero .video-container .hero-note{
-    background: rgba(0,0,0,0.8);
+
+main .hero .video-container .hero-note {
+    background: rgba(0, 0, 0, 0.8);
     height: 25vh;
     width: 55%;
     display: flex;
-
     position: relative;
     z-index: 20;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
-main .hero .video-container .hero-note h1{
+
+main .hero .video-container .hero-note h1 {
     font-size: 7.2rem;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -140,77 +146,86 @@ main .hero .video-container .hero-note h1{
 
 /* About us */
 
-main .about-us{
+main .about-us {
     width: 100vw;
     height: 80vh;
 }
 
-main .about-us .about-us-header-container{
+main .about-us .about-us-header-container {
     background-color: #0e6cb1;
     height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main .about-us .about-us-header-container .about-us-header{
+
+main .about-us .about-us-header-container .about-us-header {
     color: white;
     font-size: 4.8rem;
 }
-main .about-us .about-us-description{
+
+main .about-us .about-us-description {
     /* padding-top: 50px; */
     height: 100%;
     background-color: #f9f9f9;
 }
-main .about-us .about-us-description .about-us-title{
-    font-size: 4.0rem;
+
+main .about-us .about-us-description .about-us-title {
+    font-size: 4.8rem;
     text-align: center;
     padding-top: 3%;
 }
-main .about-us .about-us-description .about-us-text{
+
+main .about-us .about-us-description .about-us-text {
     padding-top: 1%;
     font-size: 2.6rem;
     text-align: center;
 }
-.about-us-pictures{
+
+.about-us-pictures {
     padding-top: 3%;
     width: 90%;
     margin: 0 auto;
     display: flex;
 }
 
-.picture-container{
+.picture-container {
     width: 100%;
     height: 325px;
     margin-right: 3%;
 }
-.picture-container img{
+
+.picture-container img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 /* Banner */
-main .banner{
+
+main .banner {
     width: 100vw;
     height: 60vh;
     display: flex;
 }
 
-.banner .img-container{
+.banner .img-container {
     width: 65%;
     height: 100%;
 }
 
-.banner .img-banner{
+.banner .img-banner {
     width: 100%;
     height: 100%;
 }
-.banner .img-banner img{
+
+.banner .img-banner img {
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
-.banner .nota-banner{
+
+.banner .nota-banner {
     height: 100%;
     width: 35%;
     background-color: #0e6cb1;
@@ -218,91 +233,108 @@ main .banner{
     justify-content: center;
     align-items: center;
 }
-.banner .nota-banner .ul-container{
+
+.banner .nota-banner .ul-container {
     color: white;
     width: 85%;
     height: 70%;
 }
-.banner .nota-banner .ul-container .list{
-    margin-bottom: 40px;
+
+.banner .nota-banner .ul-container .list {
+    /* margin-bottom: 40px; */
 }
-.banner .nota-banner .ul-container .list h2{
-    font-size: 3.6rem;
+
+.banner .nota-banner .ul-container .list h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3%;
+}
+
+.banner .nota-banner .ul-container .list li {
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
-.banner .nota-banner .ul-container .list li{
-    font-size: 2.0rem;
-    margin-bottom: 10px;
-}
-.banner .nota-banner .ul-container .list li .asset{
+
+.banner .nota-banner .ul-container .list li .asset {
     content: url('../Resources/check.svg');
     height: 5%;
     width: 3%;
     margin-right: 10px;
 }
 
-
 /* Services */
 
-.services-parent{
+.services-parent {
     width: 100vw;
     height: 70vh;
     background-color: #f9f9f9;
     background-image: url('../Resources/texture-banner.png');
 }
 
-.services-parent .services{
+.services-parent .services {
     margin: 0 auto;
     width: 80%;
     height: 100%;
     display: flex;
+    align-items: center;
 }
-.services .services-container
-{
-    padding-top: 5%;
+
+.services .services-container {
+    /* padding-top: 5%; */
     width: 30%;
-    height: 50%;
+    height: 90%;
     margin-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.services .services-container .img-container{
+
+.services .services-container .img-container {
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
-.services .services-container .img-container img{
+
+.services .services-container .img-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.services .services-container .container-description{
+
+.services .services-container .container-description {
     width: 100%;
-    height: 100%;
+    height: 50%;
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.services .services-container .container-description .description-title{
+
+.services .services-container .container-description .description-title {
     font-size: 3.2rem;
-    color:  #084069;
+    color: #084069;
     padding-top: 3%;
+    text-align: center;
 }
-.services .services-container .container-description .description-text{
+
+.services .services-container .container-description .description-text {
     font-size: 1.8rem;
     text-align: center;
     padding: 0% 5%;
 }
-.services .services-container .container-description .link-container{
+
+.services .services-container .container-description .link-container {
     background-color: #0e6cb1;
     height: 20%;
     width: 40%;
     border-radius: 10px;
 }
-.services .services-container .container-description .link-container a{
+
+.services .services-container .container-description .link-container a {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size: 1.8rem;
     color: white;
     text-decoration: none;
@@ -310,7 +342,7 @@ main .banner{
 
 /* Contact */
 
-.contact{
+.contact {
     background-color: #0e6cb1;
     background-image: url('../Resources/texture-contact.png');
     width: 100%;
@@ -318,22 +350,26 @@ main .banner{
     display: flex;
     color: white;
 }
+
 /* Contact Left */
-.contact .contact-left{
+
+.contact .contact-left {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.contact .contact-left .container-text{
+
+.contact .contact-left .container-text {
     width: 60%;
     height: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
-.contact .contact-left .container-text .contact-text{
+
+.contact .contact-left .container-text .contact-text {
     width: 100%;
     height: 10%;
     display: flex;
@@ -341,36 +377,42 @@ main .banner{
     font-size: 1.8rem;
     /* color: white; */
 }
-.contact .contact-left .container-text .contact-title{
+
+.contact .contact-left .container-text .contact-title {
     padding-top: 7%;
-    font-size: 2.4rem;
+    font-size: 3.2rem;
 }
+
 /* Contact right */
-.contact-right{
+
+.contact-right {
     width: 50%;
     height: 100%;
     display: flex;
 }
-.contact-right .form-contact-container{
+
+.contact-right .form-contact-container {
     width: 70%;
     height: 100%;
     margin: auto auto;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.contact-right .form-contact-container .form-contact{
+
+.contact-right .form-contact-container .form-contact {
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.contact-right .form-contact-container .form-contact h2{
+
+.contact-right .form-contact-container .form-contact h2 {
     font-size: 3.2rem;
     margin-bottom: 20px;
 }
 
-.contact-right .form-contact-container .form-contact label{
+.contact-right .form-contact-container .form-contact label {
     width: 100%;
     height: 7%;
     justify-content: flex-end;
@@ -379,38 +421,70 @@ main .banner{
     align-items: center;
     margin-bottom: 20px;
 }
-.contact-right .form-contact-container .form-contact label span{
+
+.contact-right .form-contact-container .form-contact label span {
     justify-content: flex-start;
     margin-right: 30px;
+    width: 25%;
 }
-.contact-right .form-contact-container .form-contact label input,
-.contact-right .form-contact-container .form-contact label select{
-    width: 25vw;
+
+.contact-right .form-contact-container .form-contact label input, .contact-right .form-contact-container .form-contact label select {
+    width: 75%;
     justify-content: flex-end;
     padding: 10px 15px;
 }
-.contact-right .form-contact-container .form-contact label input:focus,
-.contact-right .form-contact-container .form-contact label select:focus{
+
+.contact-right .form-contact-container .form-contact label input:focus, .contact-right .form-contact-container .form-contact label select:focus {
     outline: none;
 }
-.contact-right .form-contact-container .form-contact button{
+
+.contact-right .form-contact-container .form-contact button {
     background-color: #4c7bff;
     color: white;
     height: 7%;
     width: 20%;
     border-radius: 10px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     border: none;
     font-size: 1.8rem;
+    position: relative;
+    top: -2%;
 }
-.contact-right .form-contact-container .form-contact button:focus{
+
+.contact-right .form-contact-container .form-contact button:focus {
     outline: none;
 }
 
 /* Footer */
 
-.footer{
+.footer {
     width: 100%;
     height: 8vh;
-    background-color: #084069 ;
+    background-color: #084069;
+}
+
+@media screen and (max-width: 1024px){
+    .services .services-container .container-description .description-title,
+    .contact .contact-left .container-text .contact-title{
+        font-size: 2.4rem;
+    }
+
+    .services .services-container .container-description .description-text, 
+    .services .services-container .container-description .link-container{
+        font-size: 1.4rem;
+    }
+
+    main .hero .video-container .hero-note h1{
+        font-size: 5.0rem;
+    }
+
+    main .about-us .about-us-header-container .about-us-header,
+    main .about-us .about-us-description .about-us-title{
+        font-size: 3.6rem;
+    }
+    
+    main .about-us .about-us-description .about-us-text{
+        font-size: 1.8rem;
+    }
+
 }
