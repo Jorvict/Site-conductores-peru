@@ -567,7 +567,6 @@ main .banner {
     }
     .banner .nota-banner .ul-container{
         z-index: 35;
-        /* margin: auto auto; */
     }
     .banner .nota-banner .ul-container .list li .asset{
         width: 5%;
@@ -588,4 +587,31 @@ main .banner {
         height: 30%;
     }
 
+    .contact{
+        height: 150vh;
+        flex-wrap: wrap;
+    }
+    .contact .contact-left{
+        width: 100%;
+        height: 65vh;
+        justify-content: center;
+    }
+    .contact .contact-left .container-text{
+        text-align: center;
+    }
+    .contact .contact-right{
+        width: 100%;
+        height: 85vh;
+    }
+    .contact-right .form-contact-container .form-contact label{
+        display: block;
+    }
+    .contact-right .form-contact-container .form-contact label input, 
+    .contact-right .form-contact-container .form-contact label select{
+        width: 100%;
+    }
+    .contact-right .form-contact-container .form-contact button{
+        width: 40%;
+        top: 2%;
+    }
 }
