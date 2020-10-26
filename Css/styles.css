@@ -6,7 +6,7 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ol, ul {
@@ -17,7 +17,7 @@ ol, ul {
 
 .header {
     background-color: white;
-    width: 100vw;
+    width: 100%;
     height: 22vh;
 }
 
@@ -85,7 +85,7 @@ ol, ul {
 
 main .hero {
     height: 70vh;
-    width: 100vw;
+    width: 100%;
 }
 
 main .hero .video-container {
@@ -98,7 +98,7 @@ main .hero .video-container {
 
 main .hero .video-container video {
     height: inherit;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     position: absolute;
     z-index: 5;
@@ -114,7 +114,7 @@ main .hero .texture {
 
 main .hero .video-container::after {
     height: inherit;
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
     content: '';
     position: absolute;
@@ -143,7 +143,7 @@ main .hero .video-container .hero-note h1 {
 /* About us */
 
 main .about-us {
-    width: 100vw;
+    width: 100%;
     height: 80vh;
 }
 
@@ -200,7 +200,7 @@ main .about-us .about-us-description .about-us-text {
 /* Banner */
 
 main .banner {
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     display: flex;
 }
@@ -260,7 +260,7 @@ main .banner {
 /* Services */
 
 .services-parent {
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     background-color: #f9f9f9;
     background-image: url('../Resources/texture-banner.png');
@@ -510,7 +510,7 @@ main .banner {
 
     main .hero {
         height: 30vh;
-        width: 100vw;
+        width: 100%;
     }
     main .hero .video-container .hero-note h1{
         font-size: 3.2rem;
