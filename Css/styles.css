@@ -570,4 +570,8 @@ main .banner {
         /* margin: auto auto; */
     }
 
+    .banner .nota-banner .ul-container .list li .asset{
+        width: 5%;
+    }
+
 }
