@@ -559,7 +559,7 @@ main .banner {
     .banner .nota-banner::after{
         position: absolute;
         width: 100%;
-        height: 70%;
+        height: 70vh;
         content: '';
         object-fit: cover;
         z-index: 30;
