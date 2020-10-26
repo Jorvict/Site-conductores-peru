@@ -521,8 +521,24 @@ main .banner {
         text-align: center;
     }
 
+    main .about-us .about-us-description .about-us-title{
+        padding-top: 15%;
+    }
+
     main .about-us .about-us-description .about-us-text{
         font-size: 1.2rem;
+        padding-bottom: 8%;
+    }
+
+    main .about-us .about-us-description .about-us-pictures{
+        height: 60%;
+        flex-wrap: wrap;
+    }
+
+    main .about-us .about-us-description .about-us-pictures .picture-container{
+        width: 50%;
+        height: 50%;
+        margin-right: 0%;
     }
 
 }
