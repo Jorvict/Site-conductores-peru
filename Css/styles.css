@@ -569,9 +569,23 @@ main .banner {
         z-index: 35;
         /* margin: auto auto; */
     }
-
     .banner .nota-banner .ul-container .list li .asset{
         width: 5%;
+    }
+
+    .services-parent{
+        height: 210vh;
+    }
+    .services-parent .services{
+        width: 80%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .services .services-container{
+        padding-top: 0%;
+        margin-right: 0%;
+        width: 100%;
+        height: 30%;
     }
 
 }
