@@ -140,3 +140,159 @@ main .hero .video-container .hero-note h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+main .global{
+    width: 80%;
+}
+
+/* Contact Description */
+
+main .contact-description{
+    background-color: #0e6cb1;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+main .contact-description .space{
+    width: 80%;
+}
+
+main .contact-description .title{
+    font-size: 4.8rem;
+    margin-bottom: 15px;
+}
+
+main .contact-description .text{
+    font-size: 2.6rem;
+}
+
+
+
+
+.contact {
+    /* background-color: #0e6cb1;
+    background-image: url('../Resources/texture-contact.png'); */
+    background-color: #f9f9f9;
+    background-image: url('../Resources/texture-banner.png');
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    color: black;
+}
+
+/* Contact Left */
+
+.contact .contact-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact .contact-left .container-text {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact .contact-left .container-text .contact-text {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    /* color: white; */
+}
+
+.contact .contact-left .container-text .contact-title {
+    padding-top: 7%;
+    font-size: 3.2rem;
+}
+
+/* Contact right */
+
+.contact-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.contact-right .form-contact-container {
+    width: 70%;
+    height: 100%;
+    margin: auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-right .form-contact-container .form-contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-right .form-contact-container .form-contact h2 {
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+}
+
+.contact-right .form-contact-container .form-contact label {
+    width: 100%;
+    height: 7%;
+    justify-content: flex-end;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-right .form-contact-container .form-contact label span {
+    justify-content: flex-start;
+    margin-right: 30px;
+    width: 25%;
+}
+
+.contact-right .form-contact-container .form-contact label input, .contact-right .form-contact-container .form-contact label select {
+    width: 75%;
+    justify-content: flex-end;
+    padding: 10px 15px;
+}
+
+.contact-right .form-contact-container .form-contact label input:focus, .contact-right .form-contact-container .form-contact label select:focus {
+    outline: none;
+}
+
+.contact-right .form-contact-container .form-contact button {
+    background-color: #4c7bff;
+    color: white;
+    height: 7%;
+    width: 20%;
+    border-radius: 10px;
+    /* margin-top: 15px; */
+    border: none;
+    font-size: 1.8rem;
+    position: relative;
+    top: -2%;
+}
+
+.contact-right .form-contact-container .form-contact button:focus {
+    outline: none;
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 8vh;
+    background-color: #084069;
+}
