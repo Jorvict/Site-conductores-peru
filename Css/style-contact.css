@@ -296,3 +296,73 @@ main .contact-description .text{
     height: 8vh;
     background-color: #084069;
 }
+
+
+
+
+
+
+@media screen and (max-width:425px){
+
+    .header .header-upper .container-logo img{
+        width: 100%;
+    }
+
+    main .hero {
+        height: 30vh;
+        width: 100%;
+    }
+
+    main .hero .video-container .hero-note{
+        height: 15vh;
+    }
+    
+    main .hero .video-container .hero-note h1{
+        font-size: 3.2rem;
+    }
+
+    .header .header-lower .menu ol li {
+        width: 33%;
+    }
+
+    main .contact-description{
+        height: 35vh;
+    }
+
+    main .contact-description .title{
+        font-size: 3.2rem;
+    }
+
+    main .contact-description .text{
+        font-size: 1.8rem;
+    }
+
+    .contact{
+        height: 150vh;
+        flex-wrap: wrap;
+    }
+    .contact .contact-left{
+        width: 100%;
+        height: 65vh;
+        justify-content: center;
+    }
+    .contact .contact-left .container-text{
+        text-align: center;
+        width: 90%;
+    }
+    .contact .contact-right{
+        width: 100%;
+        height: 85vh;
+    }
+    .contact-right .form-contact-container .form-contact label{
+        display: block;
+    }
+    .contact-right .form-contact-container .form-contact label input, 
+    .contact-right .form-contact-container .form-contact label select{
+        width: 100%;
+    }
+    .contact-right .form-contact-container .form-contact button{
+        width: 40%;
+        top: 2%;
+    }
+}
