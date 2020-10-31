@@ -508,10 +508,10 @@ main .banner {
     main .about-us{
         height: 90vh;
     }
-
+/* 
     main .banner {
         height: 70vh;
-    }
+    } */
 
     .contact {
         height: 75vh;
