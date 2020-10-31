@@ -6,11 +6,24 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'PT Sans', sans-serif;
     /* overflow-x: hidden; */
 }
 
 ol, ul {
     list-style: none;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: lightblue;
+}
+
+.global{
+    width: 80%;
+    height: 100%;
 }
 
 /* Header */
@@ -98,14 +111,14 @@ main .hero .video-container {
 
 main .hero .video-container video {
     height: inherit;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     position: absolute;
     z-index: 5;
 }
 
 main .hero .texture {
-    width: inherit;
+    width: 80%;
     height: inherit;
     position: absolute;
     z-index: 15;
@@ -114,7 +127,7 @@ main .hero .texture {
 
 main .hero .video-container::after {
     height: inherit;
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     content: '';
     position: absolute;
@@ -144,7 +157,7 @@ main .hero .video-container .hero-note h1 {
 
 main .about-us {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 }
 
 main .about-us .about-us-header-container {
@@ -153,6 +166,7 @@ main .about-us .about-us-header-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 main .about-us .about-us-header-container .about-us-header {
@@ -173,7 +187,7 @@ main .about-us .about-us-description .about-us-title {
 }
 
 main .about-us .about-us-description .about-us-text {
-    padding-top: 1%;
+    padding: 1% 10%;
     font-size: 2.4rem;
     text-align: center;
 }
@@ -181,13 +195,14 @@ main .about-us .about-us-description .about-us-text {
 .about-us-pictures {
     padding-top: 3%;
     width: 90%;
+    height: 60%;
     margin: 0 auto;
     display: flex;
 }
 
 .picture-container {
     width: 100%;
-    height: 325px;
+    height: 100%;
     margin-right: 3%;
 }
 
@@ -237,7 +252,7 @@ main .banner {
 }
 
 .banner .nota-banner .ul-container .list {
-    /* margin-bottom: 40px; */
+    margin-bottom: 15%;
 }
 
 .banner .nota-banner .ul-container .list h2 {
@@ -246,7 +261,7 @@ main .banner {
 }
 
 .banner .nota-banner .ul-container .list li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
@@ -261,7 +276,7 @@ main .banner {
 
 .services-parent {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background-color: #f9f9f9;
     background-image: url('../Resources/texture-banner.png');
 }
@@ -305,14 +320,14 @@ main .banner {
 }
 
 .services .services-container .container-description .description-title {
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     color: #084069;
     padding-top: 3%;
     text-align: center;
 }
 
 .services .services-container .container-description .description-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     padding: 0% 5%;
 }
@@ -331,7 +346,7 @@ main .banner {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     text-decoration: none;
 }
@@ -370,13 +385,13 @@ main .banner {
     height: 10%;
     display: flex;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     /* color: white; */
 }
 
 .contact .contact-left .container-text .contact-title {
     padding-top: 7%;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
 }
 
 /* Contact right */
@@ -412,7 +427,7 @@ main .banner {
     width: 100%;
     height: 7%;
     justify-content: flex-end;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -442,7 +457,7 @@ main .banner {
     border-radius: 10px;
     /* margin-top: 15px; */
     border: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     position: relative;
     top: -2%;
 }
@@ -473,22 +488,23 @@ main .banner {
     }
 
     main .hero .video-container .hero-note h1{
-        font-size: 5.0rem;
+        font-size: 4.0rem;
     }
 
     main .about-us .about-us-header-container .about-us-header,
     main .about-us .about-us-description .about-us-title{
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
     
     main .about-us .about-us-description .about-us-text{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         padding-left: 2.5%;
         padding-right: 2.5%;
     }
 
 }
 @media screen and (max-height:768px){
+
     main .about-us{
         height: 90vh;
     }
@@ -502,7 +518,46 @@ main .banner {
     }
 }
 
+@media screen and (max-width:768px){
+    .header .header-lower .menu ol li {
+        width: 33%;
+    }
+
+    .header .header-upper .container-logo img{
+        width:60%;
+    }
+
+    main .hero {
+        height: 40vh;
+        width: 100%;
+    }
+
+    .services .services-container .container-description .link-container{
+        width: 80%;
+    }
+
+    .contact .contact-left .container-text .contact-text{
+        text-align: center;
+    }
+
+}
+
 @media screen and (max-width:425px){
+
+    .global{
+        width: 100%;
+        height: 100%;
+    }
+
+    main .hero .texture,
+    main .hero .video-container video,
+    main .hero .video-container::after{
+        width: 100%;
+    }
+
+    .header .header-lower .menu ol li .link{
+        font-size: 1.6rem;
+    }
 
     .header .header-upper .container-logo img{
         width: 100%;
@@ -513,7 +568,7 @@ main .banner {
         width: 100%;
     }
     main .hero .video-container .hero-note h1{
-        font-size: 3.2rem;
+        font-size: 2.4rem;
     }
 
     .header .header-lower .menu ol li {
@@ -522,16 +577,16 @@ main .banner {
 
     main .about-us .about-us-header-container .about-us-header,
     main .about-us .about-us-description .about-us-title{
-        font-size: 2.4rem;
+        font-size: 1.6rem;
         text-align: center;
     }
 
     main .about-us .about-us-description .about-us-title{
-        padding-top: 15%;
+        padding-top: 10%;
     }
 
     main .about-us .about-us-description .about-us-text{
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         padding-bottom: 8%;
     }
 
@@ -559,7 +614,7 @@ main .banner {
     .banner .nota-banner::after{
         position: absolute;
         width: 100%;
-        height: 70vh;
+        height: 60vh;
         content: '';
         object-fit: cover;
         z-index: 30;
@@ -567,6 +622,12 @@ main .banner {
     }
     .banner .nota-banner .ul-container{
         z-index: 35;
+    }
+    .banner .nota-banner .ul-container .list h2{
+        font-size: 1.6rem;
+    }
+    .banner .nota-banner .ul-container .list li{
+        font-size: 1.2rem;
     }
     .banner .nota-banner .ul-container .list li .asset{
         width: 5%;
@@ -586,6 +647,18 @@ main .banner {
         width: 100%;
         height: 30%;
     }
+    .services .services-container .container-description .description-title, 
+    .contact .contact-left .container-text .contact-title{
+        font-size: 1.6rem;
+    }
+    .services .services-container .container-description .description-text, 
+    .services .services-container .container-description .link-container{
+        font-size: 1.2rem;
+    }
+    .services .services-container .container-description .link-container a{
+        font-size: 1.2rem;
+    }
+
 
     .contact{
         height: 150vh;
@@ -602,6 +675,9 @@ main .banner {
     .contact .contact-right{
         width: 100%;
         height: 85vh;
+    }
+    .contact-right .form-contact-container .form-contact h2{
+        font-size: 2.4rem;
     }
     .contact-right .form-contact-container .form-contact label{
         display: block;
