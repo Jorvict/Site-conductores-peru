@@ -386,7 +386,7 @@ main .banner {
     display: flex;
     justify-content: center;
     font-size: 1.6rem;
-    /* color: white; */
+    text-align: center;
 }
 
 .contact .contact-left .container-text .contact-title {
@@ -477,18 +477,25 @@ main .banner {
 
 
 @media screen and (max-width: 1024px){
+    .header .header-lower .menu ol li .link{
+        font-size: 1.6rem;
+    }
     .services .services-container .container-description .description-title,
     .contact .contact-left .container-text .contact-title{
-        font-size: 2.4rem;
+        font-size: 1.6rem;
     }
 
     .services .services-container .container-description .description-text, 
     .services .services-container .container-description .link-container{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .services .services-container .container-description .link-container a{
+        font-size: 1.2rem;
     }
 
     main .hero .video-container .hero-note h1{
-        font-size: 4.0rem;
+        font-size: 3.2rem;
     }
 
     main .about-us .about-us-header-container .about-us-header,
@@ -502,16 +509,21 @@ main .banner {
         padding-right: 2.5%;
     }
 
+    .banner .nota-banner .ul-container .list h2{
+        font-size: 3.2rem;
+    }
+
+    .banner .nota-banner .ul-container .list li{
+        font-size: 1.2rem;
+    }
+
+    .contact-right .form-contact-container .form-contact label span{
+        width: 20%;
+        margin-right: 10%;
+    }
+
 }
 @media screen and (max-height:768px){
-
-    main .about-us{
-        height: 90vh;
-    }
-/* 
-    main .banner {
-        height: 70vh;
-    } */
 
     .contact {
         height: 75vh;
