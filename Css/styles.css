@@ -525,10 +525,10 @@ main .banner {
 }
 @media screen and (max-height:768px){
 
-    main .about-us,
+    /* main .about-us,
     main .banner{
         height: 80vh;
-    }
+    } */
     .contact {
         height: 75vh;
     }
